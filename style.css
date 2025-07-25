@@ -1,0 +1,252 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  font-family: "Edu QLD Hand", cursive;
+}
+
+body{
+    background-color: whitesmoke;
+    color: #474040;
+}
+header{
+  position: sticky;
+    top: 0px;
+}
+nav{
+    background-color: rgb(153, 153, 255);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 2rem;
+    
+}
+.logo{
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(64, 52, 52);
+    cursor: pointer;
+    transition: transforn 0.4s ease;
+    margin-left: 10px;
+}
+.logo:hover{
+    transform: scale(1.05);
+}
+.link li{
+    list-style: none;
+}
+.link{
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+a:hover{
+    color:rgb(10, 10, 10);
+    padding: 3px 3px;
+}
+.hero{
+    background-image: url(./hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.hero-contant{
+    margin-top: 300px;
+}
+.hero-contant h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 5px 5px rgb(113, 87, 87);
+}
+.hero-contant p{
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.btn{
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: brown;
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    border: none;
+}
+.btn:hover{
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+.destinations h1{
+    font-size: 2.5rem;
+    padding: 4rem 2rem; 
+    text-align: center;
+    color: rgba(74, 63, 63, 0.874);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    gap: 40px;
+}
+.card{
+    background-color: rgba(198, 192, 192, 0.721);
+    text-align: center;
+    width: 300px;
+    border-radius: 11px;
+    box-shadow: 10px 10px 20px rgb(75, 73, 73);
+    transition: transform 0.5s ease;
+    overflow: hidden;
+}
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 10px rgb(46, 45, 45);
+}
+.card img{
+    border-top-left-radius:11px;
+    border-top-right-radius:11px;
+    width: 100%;
+    height: 250px;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    cursor: pointer;
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+.card h3{
+    padding: 5px;
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.revew{
+    background-color: rgba(200, 200, 238, 0.548);
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+.revew-card{
+    text-align: center;
+    padding: 10px 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.revew h2{
+    padding: 40px;
+    color: rgb(156, 22, 22);
+    font-size: 2rem;
+    text-align: center;
+}
+.revew-cards{
+    background-color: rgba(214, 170, 211, 0.495);
+    padding: 2.5px;
+    width: 320px;
+    border-bottom-left-radius:11px;
+    border-bottom-right-radius:11px;
+    overflow: hidden;
+    box-shadow: 5px 8px 20px;
+    transition:transform 0.5s ease;
+}
+.revew-cards p{
+    background-color: rgba(157, 115, 197, 0.579);
+    color: white;
+    padding: 15px;
+    height:180px;
+}
+.revew-cards h4{
+    text-align: center;
+    margin: 6px;
+}
+.revew-cards:hover{
+    transform: scale(1.06);
+}
+.about{
+    margin-top: 40px;
+    text-align: center;
+    padding: 30px 5px ;
+    background-color: antiquewhite;
+    color: rgb(109, 33, 33);
+}
+.about h2{
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+.content {
+    padding: 5rem 3rem;
+    text-align: center;
+    margin: auto;
+}
+.content h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    margin: auto;
+    cursor: pointer;
+}
+.content form input{
+    border:2px rgb(3, 184, 184) solid; 
+    border-radius: 10px;
+    background-color: rgba(208, 251, 251, 0.966);
+    font-size: 16px;
+    padding: 3px;
+}
+::placeholder{
+    color: rgba(48, 59, 59, 0.325);
+}
+.content form button{
+    margin: auto;
+    background-color: rgb(130, 125, 206);
+    color: white;
+    border-radius: 10px;
+    width: 180px;
+    padding: 5px;
+    cursor: pointer;
+    transition:transform 0.5s ease;
+}
+.content form button:hover{
+    transform: scale(1.05);
+    background-color: green;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+@media(max-width:700px)
+{
+   .link{
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    border-radius: 7px;
+   } 
+  .logo{
+    margin-top: 35px;
+    margin-left: 0px;
+  } 
+  .hero-contant h1{
+   font-size:1.5rem;
+  }
+  .hero-contant p{
+    font-size: 1rem;
+  }
+}
